@@ -1,25 +1,25 @@
 const slider = document.querySelector(".slider-container");
 let mySwiper;
+let state = false;
 
+function mobileSlider() {      
+    let tablet = window.matchMedia('(min-width: 768px'); 
+    console.log("mobile slider");
+    if (!tablet.matches && !state) {
+        console.log('Slider ON') 
+        mySwiper = new Swiper(slider, {
+            slidesPerView: 1,
+            spaceBetween: 1,
+            loop: true, 
+            slideClass: "swiper-slide",
+        });
+        state = true;
+    } else { 
+        if (mySwiper) {
+            console.log("Destroy")
+            mySwiper.destroy()
+        } 
 
-function mobileSlider () {
-    if (window.innerWidth < 768 && slider.dataset.mobile == "false") {
-       mySwiper = new Swiper(slider, {
-           slidesPerView: 1,
-           spaceBetween: 16,
-           loop: true,
-           slideClass: "swiper-slide",
-            
-       });
-        
-       slider.dataset.mobile == "true";
-    }
-    if (window.innerWidth >= 768) {
-        slider.dataset.mobile = "false";
-        
-        mySwiper.destroy();
-    }
-}
 
 mobileSlider();
 
@@ -30,7 +30,23 @@ window.addEventListener("resize", () => {
 
 
 
-
+function mobileSlider() {      
+    let tablet = window.matchMedia('(min-width: 768px'); 
+    console.log("mobile slider");
+    if (!tablet.matches && !state) {
+        console.log('Slider ON') 
+        mySwiper = new Swiper(slider, {
+            slidesPerView: 1,
+            spaceBetween: 1,
+            loop: true, 
+            slideClass: "swiper-slide",
+        });
+        state = true;
+    } else { 
+        if (mySwiper) {
+            console.log("Destroy")
+            mySwiper.destroy()
+        } 
 
 
 
