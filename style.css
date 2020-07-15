@@ -32,10 +32,11 @@ body {
     margin: 16px 0px;
     flex-grow: 0;
 }
+
 .slider-container {
     width: 240px;
-    margin-left: 16px;
     overflow: hidden;
+    margin: auto;
 }
 .swiper-wrapper {
     display: flex;
@@ -48,11 +49,16 @@ body {
     left: 10px !important;
 }
 .main-brands__button img {
-    width: 240px;
+    background-color: #FFFFFF;
 }
-.read-more::before {
-    content: url("images/icon.svg");
+.main-brands__button:hover {
+    box-shadow: 0 0 5px 5px #ffd7e3;
+}
+.read-more__icon {
+    display: none;
     margin-right: 16px;
+    margin-left: 16px;
+    transition-duration: 1s;
 }
 .read-more {
     height: 24px;
@@ -61,7 +67,79 @@ body {
     letter-spacing: -0.2px;
     color: #1B1C21;
     font-weight: 510;
-    display: block;
+    display: none;
     cursor: pointer;
+    border: none;
+    background-color: #F8F8F8;
+    outline: none;
+    font-family: "TT Lakes";
+    text-transform: uppercase;
+    padding: 0;
 }
-@media ()
+.rotate {
+    transform: rotate(180deg);
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+    .slider-container {
+        overflow: visible;
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .swiper-slide {
+        width: 240px !important;
+    }
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .read-more {
+        display: inline;
+    }
+    .read-more__icon {
+        display: inline;
+    }
+    .main-brands__button {
+        margin-left: 16px;
+        
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .hidden {
+    display: none;   
+}
+}
+@media (min-width: 1120px) {
+    .slider-container {
+        overflow: visible;
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .swiper-slide {
+        width: 240px !important;
+    }
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .read-more {
+        display: inline;
+    }
+    .read-more__icon {
+        display: inline;
+    }
+    .main-brands__button {
+        margin-left: 16px;
+        
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .hidden:nth-child(n+9) {
+    display: none;  
+}
+}
