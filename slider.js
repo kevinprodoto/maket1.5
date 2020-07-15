@@ -13,6 +13,10 @@ function mobileSlider() {
                 spaceBetween: 1,
                 loop: true,
                 slideClass: "swiper-slide",
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
             });
         }
     } else {
