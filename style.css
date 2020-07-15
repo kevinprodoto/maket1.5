@@ -32,6 +32,8 @@ body {
     padding: 0px;
     margin: 16px 0px;
     flex-grow: 0;
+    z-index: 100;
+    background-color: #F8F8F8;
 }
 
 .slider-container {
@@ -53,9 +55,7 @@ body {
 .main-brands__button img {
     background-color: #FFFFFF;
 }
-.main-brands__button:hover {
-    box-shadow: 0 0 5px 5px #ffd7e3;
-}
+
 .read-more__icon {
     display: none;
     margin-right: 16px;
@@ -108,6 +108,9 @@ body {
         margin-left: 16px;
         
     }
+    .main-brands__button:hover {
+    box-shadow: 0 0 5px 5px #ffd7e3;
+    }
     .swiper-pagination {
         display: none;
     }
@@ -139,6 +142,9 @@ body {
     .main-brands__button {
         margin-left: 16px;
         
+    }
+    .main-brands__button:hover {
+    box-shadow: 0 0 5px 5px #ffd7e3;
     }
     .swiper-pagination {
         display: none;
