@@ -35,7 +35,7 @@ body {
 .slider-container {
     width: 240px;
     margin-left: 16px;
-    
+    overflow: hidden;
 }
 .swiper-wrapper {
     display: flex;
@@ -49,4 +49,18 @@ body {
 }
 .main-brands__button img {
     width: 240px;
+}
+.read-more::before {
+    content: url("images/icon.svg");
+    margin-right: 16px;
+}
+.read-more {
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 510;
+    display: block;
+    cursor: pointer;
 }
