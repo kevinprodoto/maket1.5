@@ -3,11 +3,9 @@ let mySwiper;
 let state = false;
 function mobileSlider() {
     let tablet = window.matchMedia('(min-width: 768px');
-    console.log(state);
     if (!tablet.matches) {
         if (!state) {
             state = true;
-            console.log('Slider ON')
             mySwiper = new Swiper(slider, {
                 slidesPerView: 1,
                 spaceBetween: 1,
@@ -21,7 +19,6 @@ function mobileSlider() {
         }
     } else {
         if (mySwiper) {
-            console.log("Destroy")
             mySwiper.destroy()
             state = false;
         }
