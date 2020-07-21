@@ -108,8 +108,9 @@ body {
         margin-left: 16px;
         
     }
-    .main-brands__button:hover {
+    .swiper-slide img:hover {
     box-shadow: 0 0 5px 5px #ffd7e3;
+        border-radius: 6px;
     }
     .swiper-pagination {
         display: none;
@@ -143,8 +144,9 @@ body {
         margin-left: 16px;
         
     }
-    .main-brands__button:hover {
+    .swiper-slide img:hover {
     box-shadow: 0 0 5px 5px #ffd7e3;
+        border-radius: 6px;
     }
     .swiper-pagination {
         display: none;
