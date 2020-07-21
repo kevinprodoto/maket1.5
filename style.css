@@ -84,15 +84,24 @@ body {
     transform: rotate(180deg);
 }
 @media (min-width: 768px) and (max-width: 1119px) {
+    body {
+        width: 768px;
+        margin: auto;
+    }
+    
     .slider-container {
         overflow: visible;
         display: block;
         width: 100%;
         margin-left: 0px;
     }
-    .swiper-slide {
-        width: 240px !important;
+    .swiper-slide img {
+        width: 224px;
     }
+    .swiper-slide {
+        width: 224px !important;
+    }
+    
     .swiper-wrapper {
         flex-wrap: wrap;
         width: 100%;
@@ -105,11 +114,11 @@ body {
         display: inline;
     }
     .main-brands__button {
-        margin-left: 16px;
+        margin-left: 24px;
         
     }
     .swiper-slide img:hover {
-    box-shadow: 0 0 5px 5px #ffd7e3;
+        box-shadow: 0 0 5px 5px #ffd7e3;
         border-radius: 6px;
     }
     .swiper-pagination {
@@ -120,6 +129,10 @@ body {
 }
 }
 @media (min-width: 1120px) {
+    body {
+        width: 1120px;
+        margin: auto;
+    }
     .slider-container {
         overflow: visible;
         display: block;
@@ -129,6 +142,7 @@ body {
     .swiper-slide {
         width: 240px !important;
     }
+    
     .swiper-wrapper {
         flex-wrap: wrap;
         width: 100%;
@@ -141,8 +155,7 @@ body {
         display: inline;
     }
     .main-brands__button {
-        margin-left: 16px;
-        
+        margin-left: 32px;
     }
     .swiper-slide img:hover {
     box-shadow: 0 0 5px 5px #ffd7e3;
